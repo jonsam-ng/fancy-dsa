@@ -7,34 +7,16 @@ export default [
   {
     text: "数据结构",
     link: "/ds/",
-    items: [
-      {
-        text: "RoadMap",
-        link: "/ds/roadmap/",
-      },
-    ],
   },
   // ========== 机器学习 ========== //
   {
     text: "算法",
     link: "/algorithm/",
-    items: [
-      {
-        text: "RoadMap",
-        link: "/algorithm/roadmap/",
-      },
-    ],
   },
   // ========== 深度学习 ========== //
   {
     text: "LeetCode",
     link: "/leetcode/",
-    items: [
-      {
-        text: "RoadMap",
-        link: "/leetcode/roadmap/",
-      },
-    ],
   },
   { text: "关于", link: "/about/" },
   {

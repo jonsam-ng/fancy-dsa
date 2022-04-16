@@ -9,17 +9,17 @@ bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | no
 
 features: # 可选的
   - title: 数据结构
-    details: 经典数据结构...
-    link: /web/ # 可选
-    imgUrl: /img/web.png # 可选
+    details: 经典数据结构、进阶数据结构...
+    link: /ds/index/ # 可选
+    imgUrl: /img/ds.png # 可选
   - title: 算法
-    details: 排序算法、搜索算法、进阶算法、
-    link: /ui/
-    imgUrl: /img/ui.png
+    details: 排序算法、搜索算法、进阶算法...
+    link: /algorithm/index/
+    imgUrl: /img/algorithm.png
   - title: LeetCode
     details: LeetCode 成长之路...
     link: /technology/
-    imgUrl: /img/other.png
+    imgUrl: /img/leetcode.png
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 # postList: detailed

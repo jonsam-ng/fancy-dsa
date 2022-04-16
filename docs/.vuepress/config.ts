@@ -70,7 +70,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       avatar:
         "https://www.jonsam.site/wp-content/uploads/2019/10/c1fbc401c64937aaec6cb53359e7c57eabd8e477-e1570649725791.gif",
       name: "Jonsam NG",
-      slogan: "让有意义的事变得有意思，让有意思的事变得有意义",
+      slogan: "想的更多，也要想的更远",
     },
     social,
     footer: {

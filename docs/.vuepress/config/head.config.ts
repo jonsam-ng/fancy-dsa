@@ -3,11 +3,11 @@
  ******************************************************************************************/
 
 export default [
-  ["link", { rel: "icon", href: `/img/favicon32x32.ico` }],
+  ["link", { rel: "icon", href: `/img/favicon.ico` }],
   ["meta", { name: "referrer", content: "no-referrer-when-downgrade" }],
   ["meta", { name: "keywords", content: "机器学习,深度学习" }],
   // ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计的站长验证（你可以去掉）
-  ["meta", { name: "theme-color", content: "#A0CEC7" }], // 移动浏览器主题颜色
+  ["meta", { name: "theme-color", content: "#06403F" }], // 移动浏览器主题颜色
   [
     "link",
     {

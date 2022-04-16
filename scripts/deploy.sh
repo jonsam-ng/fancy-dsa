@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'ml.jonsam.site' > CNAME
+echo 'dsa.jonsam.site' > CNAME
 
 git config --global user.name "wuqingshan"
 git config --global user.email "wuqingshan@xylink.com"

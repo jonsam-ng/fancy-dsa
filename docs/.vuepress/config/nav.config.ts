@@ -28,5 +28,6 @@ export default [
       { text: "归档", link: "/archives/" },
     ],
   },
+  { text: "设计模式", link: "http://docs.jonsam.site/project-5/" },
   { text: "博客", link: "https://www.jonsam.site" },
 ];

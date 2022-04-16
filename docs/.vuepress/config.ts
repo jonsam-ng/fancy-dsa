@@ -12,8 +12,8 @@ import {
   readEachFileWords,
 } from "./webSiteInfo/readFile";
 
-const base = "/fancy-machine-learnning";
-const siteName = "Fancy Machine Learnning";
+const base = "/fancy-dsa";
+const siteName = "Fancy DSA";
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing",
@@ -21,15 +21,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     "/": {
       lang: "zh-CN",
       title: siteName,
-      description: "机器学习一站式笔记，学习机器学习、深度学习技术文章",
+      description: "数据结构与算法，LeetCode刷题笔记，算法成长之路",
     },
   },
-  // base: `${base}/`,
   themeConfig: {
     nav,
     sidebarDepth: 1,
     logo: `/img/logo.png`,
-    repo: "jonsam-ng/fancy-machine-learnning",
+    repo: "jonsam-ng/fancy-dsa",
     searchMaxSuggestions: 10,
     lastUpdated: "上次更新",
     docsDir: "docs",

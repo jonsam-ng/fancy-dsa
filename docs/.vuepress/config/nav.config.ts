@@ -6,7 +6,7 @@ export default [
   // ========== 基础 ========== //
   {
     text: "数据结构",
-    link: "/ds/index/",
+    link: "/ds/",
     items: [
       {
         text: "RoadMap",
@@ -17,7 +17,7 @@ export default [
   // ========== 机器学习 ========== //
   {
     text: "算法",
-    link: "/algorithm/index/",
+    link: "/algorithm/",
     items: [
       {
         text: "RoadMap",
@@ -28,7 +28,7 @@ export default [
   // ========== 深度学习 ========== //
   {
     text: "LeetCode",
-    link: "/leetcode/index/",
+    link: "/leetcode/",
     items: [
       {
         text: "RoadMap",

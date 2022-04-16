@@ -5,39 +5,36 @@
 export default [
   // ========== 基础 ========== //
   {
-    text: "基础",
-    link: "/basic/",
+    text: "数据结构",
+    link: "/ds/index/",
     items: [
       {
         text: "RoadMap",
-        link: "/basic/roadmap/",
-      },
-      {
-        text: "数理基础",
-        items: [{ text: "开始上手", link: "/basic/math/index/" }],
-      },
-      {
-        text: "Python",
-        items: [{ text: "开始上手", link: "/basic/python/index/" }],
+        link: "/ds/roadmap/",
       },
     ],
   },
   // ========== 机器学习 ========== //
   {
-    text: "机器学习",
-    link: "/machine-learnning/",
-    items: [],
+    text: "算法",
+    link: "/algorithm/index/",
+    items: [
+      {
+        text: "RoadMap",
+        link: "/algorithm/roadmap/",
+      },
+    ],
   },
   // ========== 深度学习 ========== //
   {
-    text: "深度学习",
-    link: "/deep-learnning/",
-    items: [],
-  },
-  {
-    text: "更多",
-    link: "/more/",
-    items: [],
+    text: "LeetCode",
+    link: "/leetcode/index/",
+    items: [
+      {
+        text: "RoadMap",
+        link: "/leetcode/roadmap/",
+      },
+    ],
   },
   { text: "关于", link: "/about/" },
   {

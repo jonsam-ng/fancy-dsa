@@ -18,7 +18,13 @@ export default [
 		text: "LeetCode",
 		link: "/leetcode/",
 	},
-	{ text: "更多", items: [{ text: "关于", link: "/about/" }] },
+	{
+		text: "更多",
+		items: [
+			{ text: "关于", link: "/about/" },
+			{ text: "导航", link: "/nav/" },
+		],
+	},
 	{
 		text: "索引",
 		link: "/archives/",

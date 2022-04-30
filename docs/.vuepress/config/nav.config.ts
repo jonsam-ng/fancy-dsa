@@ -22,7 +22,7 @@ export default [
 		text: "更多",
 		items: [
 			{ text: "关于", link: "/about/" },
-			{ text: "导航", link: "/nav/" },
+			{ text: "导航", link: "https://source.jonsam.site/nav/" },
 		],
 	},
 	{

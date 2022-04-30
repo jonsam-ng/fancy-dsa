@@ -92,4 +92,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		".vuepress/config/htmlModules.ts",
 		".vuepress/config/nav.config.ts",
 	],
+	configureWebpack: {
+		node: {
+			global: true,
+			process: true,
+			self: true,
+		},
+	},
 });

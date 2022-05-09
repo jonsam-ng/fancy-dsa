@@ -6,11 +6,6 @@ import plugins from "./config/plugin.config";
 import nav from "./config/nav.config";
 import social from "./config/social.config";
 import head from "./config/head.config";
-import {
-	readFileList,
-	readTotalFileWords,
-	readEachFileWords,
-} from "./webSiteInfo/readFile";
 
 const base = "/fancy-dsa";
 const siteName = "Fancy DSA";
@@ -91,6 +86,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		".vuepress/config.ts",
 		".vuepress/config/htmlModules.ts",
 		".vuepress/config/nav.config.ts",
+		".vuepress/config/plugin.config.ts",
 	],
 	configureWebpack: {
 		node: {

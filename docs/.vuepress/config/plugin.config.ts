@@ -1,6 +1,7 @@
 import { UserPlugins } from "vuepress/config";
 import baiduCode from "./baiduCode"; // 百度统计hm码
 import dayjs from "dayjs";
+import type { SmPlayerPluginOption } from "vuepress-plugin-smplayer/types";
 
 /*****************************************************************************************
  *                                 配置插件

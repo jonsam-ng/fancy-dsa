@@ -1,5 +1,6 @@
 // import vue from 'vue/dist/vue.esm.browser'
 import LastReadingPopup from "./components/LastReadingPopup.vue";
+import CoreVideoPlayer from "./components/CoreVideoPlayer.vue";
 
 export default ({
 	Vue, // VuePress 正在使用的 Vue 构造函数

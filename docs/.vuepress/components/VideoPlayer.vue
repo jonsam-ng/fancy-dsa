@@ -1,6 +1,6 @@
 <template>
 	<div class="player-container">
-		<VueCoreVideoPlayer
+		<vue-core-video-player
 			:src="src"
 			:muted="muted"
 			:cover="cover"
@@ -12,52 +12,13 @@
 			:controls="controls"
 			:autoplay="autoplay"
 			:lang="lang"
-			@canplay="$emit('canplay')"
-			@canplaythrough="$emit('canplaythrough')"
-			@core_to_mp4="$emit('core_to_mp4')"
-			@durationchange="$emit('durationchange')"
-			@ended="$emit('ended')"
-			@error="$emit('error')"
-			@ERROR_AUTO_PLAY="$emit('ERROR_AUTO_PLAY')"
-			@ERROR_NO_MEDIA="$emit('ERROR_NO_MEDIA')"
-			@lifecycle_inited="$emit('lifecycle_inited')"
-			@lifecycle_initing="$emit('lifecycle_initing')"
-			@lifecycle_parse="$emit('lifecycle_parse')"
-			@lifecycle_stop="$emit('lifecycle_stop')"
-			@loadeddata="$emit('loadeddata')"
-			@loadedmetadata="$emit('loadedmetadata')"
-			@loading_end="$emit('loading_end')"
-			@loading_start="$emit('loading_start')"
-			@loadstart="$emit('loadstart')"
-			@pause="$emit('pause')"
-			@play="$emit('play')"
-			@playing="$emit('playing')"
-			@progress="$emit('progress')"
-			@resolution_update="$emit('resolution_update')"
-			@retry="$emit('retry')"
-			@seeked="$emit('seeked')"
-			@seeking="$emit('seeking')"
-			@service_ended="$emit('service_ended')"
-			@service_loading="$emit('service_loading')"
-			@SOURCE_UPDATED="$emit('SOURCE_UPDATED')"
-			@stalled="$emit('stalled')"
-			@timeupdate="$emit('timeupdate')"
-			@ui_dashboard_hide="$emit('ui_dashboard_hide')"
-			@ui_dashboard_show="$emit('ui_dashboard_show')"
-			@ui_pause="$emit('ui_pause')"
-			@ui_play="$emit('ui_play')"
-			@volumechange="$emit('volumechange')"
-			@waiting="$emit('waiting')"
 		/>
 	</div>
 </template>
 
 <script>
-import VueCoreVideoPlayer from "vue-core-video-player";
-
 export default {
-	name: "Video",
-	comments: { VueCoreVideoPlayer },
+	name: "VideoPlayer",
 	props: {
 		src: {
 			type: [String, Array], // 视频链接
@@ -71,7 +32,6 @@ export default {
 			type: String, // 显示视频的封面，如果设置 autoplay，自动播放成功后，不会显示
 		},
 		volume: {
-			//无法控制
 			type: Number, // 控制视频音量(0-1)
 			default: 0.5,
 		},
@@ -101,10 +61,12 @@ export default {
 			default: "auto",
 		},
 		autoplay: {
-			type: Boolean, // 自动播放视频
+			type: Boolean,
 			default: false,
 		},
 		lang: { type: String, default: "zh-CN" },
 	},
 };
 </script>
+
+<style></style>

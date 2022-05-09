@@ -131,6 +131,11 @@ export default <UserPlugins>[
 	["seo", {}],
 	// see https://github.com/tolking/vuepress-plugin-img-lazy
 	"img-lazy",
+	[
+		"smplayer",
+		// see https://www.u2sb.com/pages/963900/#%E9%85%8D%E7%BD%AE
+		{ bilibili: { danmaku: false } } as SmPlayerPluginOption,
+	],
 	{
 		name: "custom-plugins",
 		globalUIComponents: ["LastReadingPopup", "GlobalTip", "BlockToggle"], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles

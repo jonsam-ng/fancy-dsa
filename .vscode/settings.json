@@ -1,4 +1,8 @@
 {
+  "files.exclude": {
+    "node_modules": true,
+    ".history": true,
+  },
   "cSpell.words": [
     "autoplay",
     "Bilibili",

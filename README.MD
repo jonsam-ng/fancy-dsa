@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-Here to learning <b>Data Structures</b> and <b>Algorithms</b> to enhance your skills on <b>JavaScript</b>.🧑‍💻👩‍💻👨‍💻<b>Leetcode</b> includes.
+Here to learning <b>Data Structures</b> and <b>Algorithms</b> to enhance your skills on <b>JavaScript</b>.<b>LeetCode</b> includes.🧑‍💻👩‍💻👨‍💻
 
 <p align="center">数据结构与算法，LeetCode刷题笔记，算法成长之路</p>
 </p>

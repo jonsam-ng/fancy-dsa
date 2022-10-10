@@ -133,6 +133,6 @@ export default <UserPlugins>[
 	"img-lazy",
 	{
 		name: "custom-plugins",
-		globalUIComponents: ["LastReadingPopup", "GlobalTip", "BlockToggle", 'Bilibili'], // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+		globalUIComponents: ["LastReadingPopup", "GlobalTip", "BlockToggle"],
 	},
 ];

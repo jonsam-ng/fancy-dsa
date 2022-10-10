@@ -2,6 +2,7 @@ import LastReadingPopup from "./components/LastReadingPopup.vue";
 import QrCodeMixin from "./plugins/qrcode";
 import LastReadingMixin from "./plugins/lastReading";
 import VideoPlayerMixin from "./plugins/videoPlayer";
+import Bilibili from "./components/Bilibili.vue";
 
 export default ({
 	Vue, // VuePress 正在使用的 Vue 构造函数
@@ -11,6 +12,7 @@ export default ({
 	isServer, // 当前应用配置是处于 服务端渲染 或 客户端
 }) => {
 	Vue.component(LastReadingPopup.name, LastReadingPopup);
+	Vue.component(Bilibili.name, Bilibili);
 	Vue.mixin(LastReadingMixin);
 	Vue.mixin(QrCodeMixin);
 	Vue.mixin(VideoPlayerMixin);

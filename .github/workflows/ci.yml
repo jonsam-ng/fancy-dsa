@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
 
     steps:
       - name: Checkout # 步骤1
@@ -30,6 +30,6 @@ jobs:
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
-        run: npm install && npm run deploy
+        run: pnpm install && pnpm run deploy
 
       # 如只提交到github pages可以使用github-pages-deploy-action，详见: https://github.com/JamesIves/github-pages-deploy-action

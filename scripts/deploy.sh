@@ -3,8 +3,9 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+npm i -g pnpm
 # 生成静态文件
-npm run build
+pnpm run build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

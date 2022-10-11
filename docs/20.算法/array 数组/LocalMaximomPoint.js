@@ -1,3 +1,4 @@
+
 /**
  * [LocalMaxima](https://www.geeksforgeeks.org/find-indices-of-all-local-maxima-and-local-minima-in-an-array/) is an algorithm to find relative bigger numbers compared to their neighbors
  *
@@ -27,4 +28,3 @@ const findMaxPointIndex = (array, rangeStartIndex, rangeEndIndex, originalLength
 
 const LocalMaximomPoint = (A) => findMaxPointIndex(A, 0, A.length - 1, A.length)
 
-export { LocalMaximomPoint }

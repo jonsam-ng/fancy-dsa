@@ -29,3 +29,6 @@ export default class BvidUtil {
 		return "av" + String((r - this.ADD) ^ this.XOR);
 	}
 }
+
+const bvidUtil = new BvidUtil();
+export { bvidUtil };

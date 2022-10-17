@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import bvidUtil  from "../../../utils/bvid";
+import { bvidUtil } from "../../../utils/bvid";
 export default {
 	name: "Bilibili",
 	data() {

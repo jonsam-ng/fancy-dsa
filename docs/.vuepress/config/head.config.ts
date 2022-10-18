@@ -18,7 +18,7 @@ export default [
 	// PWA
 	["link", { rel: "icon", href: "/img/favicon.ico", type: "image/x-icon" }],
 	["link", { rel: "manifest", href: "/img/manifest.json" }],
-	["meta", { name: "theme-color", content: "#06403F" }], // 移动浏览器主题颜色
+	["meta", { name: "theme-color", content: "#E86E2C" }], // 移动浏览器主题颜色
 	["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
 	["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
 	[

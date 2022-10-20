@@ -12,5 +12,23 @@
     "katex",
     "lowbit",
     "typeof"
+  ],
+  "search-online.add-search-engine": [
+    {
+      "name": "SearxNGChinese",
+      "url": "https://search.jonsam.site/search?q=%SELECTION%&language=zh&safesearch=2&categories=general"
+    },
+    {
+      "name": "Bilibili",
+      "url": "https://search.bilibili.com/all?keyword=%SELECTION%"
+    },
+    {
+      "name": "SearxNG",
+      "url": "https://search.jonsam.site/search?q=%SELECTION%&language=en&safesearch=2&categories=general"
+    },
+    {
+      "name": "Duck",
+      "url": "https://duckduckgo.com/?q=%SELECTION%"
+    }
   ]
 }

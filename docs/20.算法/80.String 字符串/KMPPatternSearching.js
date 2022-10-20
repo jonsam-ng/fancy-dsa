@@ -51,5 +51,9 @@ const KMPSearch = (text, pattern) => {
 
   return result
 }
+```
 
-export { KMPSearch }
+## 参考
+
+- [字符串匹配的KMP算法 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
+

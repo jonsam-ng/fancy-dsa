@@ -126,9 +126,10 @@
 	</ClientOnly>
 </template>
 
-<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/cmaps/" />
+<script src="https://unpkg.com/browse/pdfjs-dist@2.16.105/cmaps/" />
 
 <script>
+// <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/cmaps/" />
 import VuePdfEmbed from "vue-pdf-embed/dist/vue2-pdf-embed";
 
 export default {

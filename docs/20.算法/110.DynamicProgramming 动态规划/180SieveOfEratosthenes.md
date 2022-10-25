@@ -1,7 +1,7 @@
 ---
 title: 180SieveOfEratosthenes
 date: 2022-09-26 10:05:25
-permalink: /pages/7cc054/
+permalink: /algorithm/dp/180SieveOfEratosthenes/
 categories:
   - 算法
   - Dynamic-Programming 动态规划

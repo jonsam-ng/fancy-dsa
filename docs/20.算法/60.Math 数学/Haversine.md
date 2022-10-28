@@ -1,3 +1,17 @@
+---
+title: Haversine [半正矢公式]
+date: 2022-09-26 10:05:25
+permalink: /pages/c3f9cf/
+categories:
+  - 算法
+  - Math 数学
+tags:
+  - 
+---
+
+## 实现
+
+```js
 /**
  * @function HaversineDistance
  * @description Calculate the distance between two coordinates using the haversine formula
@@ -30,5 +44,8 @@ const validateLatOrLong = value => {
     throw new TypeError('The value of latitude or longitude should be a number')
   }
 }
+```
 
-export { haversineDistance }
+## 参考
+
+- [半正矢公式 - Wikiwand](https://www.wikiwand.com/zh-hans/%E5%8D%8A%E6%AD%A3%E7%9F%A2%E5%85%AC%E5%BC%8F)

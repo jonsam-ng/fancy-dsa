@@ -2,6 +2,7 @@ import { UserPlugins } from "vuepress/config";
 import baiduCode from "./baiduCode"; // 百度统计hm码
 import dayjs from "dayjs";
 import PanguPlugin from "markdown-it-pangu";
+import TaskListsPlugin from "markdown-it-task-lists";
 import type { SmPlayerPluginOption } from "vuepress-plugin-smplayer/types";
 
 /*****************************************************************************************
@@ -9,6 +10,7 @@ import type { SmPlayerPluginOption } from "vuepress-plugin-smplayer/types";
  ******************************************************************************************/
 
 export const markdownPlugins = (md) => {
+	md.use(TaskListsPlugin);
 	md.use(PanguPlugin);
 };
 

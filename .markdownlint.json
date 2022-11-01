@@ -1,6 +1,7 @@
 {
-  "default": true,
-  "no-inline-html": false,
-  "line-length": false,
-  "ul-indent": { "indent": 4 }
+	"default": true,
+	"no-inline-html": false,
+	"line-length": false,
+	"ul-indent": { "indent": 4 },
+	"fenced-code-language": false
 }

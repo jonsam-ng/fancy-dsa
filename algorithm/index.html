@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>算法 | Fancy DSA</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3314748_9xij1pv3h4i.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/img/manifest.json">
+    <link rel="apple-touch-icon" href="/img/android-chrome-192x192.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="数据结构与算法，LeetCode刷题笔记，算法成长之路">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="keywords" content="机器学习,深度学习">
+    <meta name="theme-color" content="#06403F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.2b2147b7.css" as="style"><link rel="preload" href="/assets/js/app.bf9a1460.js" as="script"><link rel="preload" href="/assets/js/2.99f70505.js" as="script"><link rel="preload" href="/assets/js/190.efd660a2.js" as="script"><link rel="preload" href="/assets/js/6.aae8cd39.js" as="script"><link rel="preload" href="/assets/js/4.0809c88f.js" as="script"><link rel="prefetch" href="/assets/js/10.ee4dc233.js"><link rel="prefetch" href="/assets/js/100.f451641b.js"><link rel="prefetch" href="/assets/js/101.3cda3408.js"><link rel="prefetch" href="/assets/js/102.699c7ad7.js"><link rel="prefetch" href="/assets/js/103.c87fcec3.js"><link rel="prefetch" href="/assets/js/104.9e7a10d1.js"><link rel="prefetch" href="/assets/js/105.574f860f.js"><link rel="prefetch" href="/assets/js/106.35ee8757.js"><link rel="prefetch" href="/assets/js/107.94d2a74a.js"><link rel="prefetch" href="/assets/js/108.8cb63ad5.js"><link rel="prefetch" href="/assets/js/109.0dca844e.js"><link rel="prefetch" href="/assets/js/11.e23548d9.js"><link rel="prefetch" href="/assets/js/110.cf2942fe.js"><link rel="prefetch" href="/assets/js/111.b88f9220.js"><link rel="prefetch" href="/assets/js/112.8a7925be.js"><link rel="prefetch" href="/assets/js/113.5cb1f241.js"><link rel="prefetch" href="/assets/js/114.2d5067d4.js"><link rel="prefetch" href="/assets/js/115.ebfb16bc.js"><link rel="prefetch" href="/assets/js/116.8e79aa04.js"><link rel="prefetch" href="/assets/js/117.c791df25.js"><link rel="prefetch" href="/assets/js/118.02371379.js"><link rel="prefetch" href="/assets/js/119.7f5ffbe1.js"><link rel="prefetch" href="/assets/js/12.8f5dd883.js"><link rel="prefetch" href="/assets/js/120.893b8ea4.js"><link rel="prefetch" href="/assets/js/121.0acbf820.js"><link rel="prefetch" href="/assets/js/122.efb479b6.js"><link rel="prefetch" href="/assets/js/123.c725f2d1.js"><link rel="prefetch" href="/assets/js/124.47798259.js"><link rel="prefetch" href="/assets/js/125.d5d9808a.js"><link rel="prefetch" href="/assets/js/126.23924ba6.js"><link rel="prefetch" href="/assets/js/127.3b09f9e9.js"><link rel="prefetch" href="/assets/js/128.57f987a6.js"><link rel="prefetch" href="/assets/js/129.460619a8.js"><link rel="prefetch" href="/assets/js/13.28c6f799.js"><link rel="prefetch" href="/assets/js/130.a20d0d99.js"><link rel="prefetch" href="/assets/js/131.00bbea0a.js"><link rel="prefetch" href="/assets/js/132.984c8199.js"><link rel="prefetch" href="/assets/js/133.f0c5696b.js"><link rel="prefetch" href="/assets/js/134.e9311d75.js"><link rel="prefetch" href="/assets/js/135.1c1f4395.js"><link rel="prefetch" href="/assets/js/136.314c81a6.js"><link rel="prefetch" href="/assets/js/137.d67476b6.js"><link rel="prefetch" href="/assets/js/138.309ec48a.js"><link rel="prefetch" href="/assets/js/139.38294883.js"><link rel="prefetch" href="/assets/js/14.d0d8ded1.js"><link rel="prefetch" href="/assets/js/140.5cab5463.js"><link rel="prefetch" href="/assets/js/141.999ccb91.js"><link rel="prefetch" href="/assets/js/142.43cefb48.js"><link rel="prefetch" href="/assets/js/143.69d1d419.js"><link rel="prefetch" href="/assets/js/144.9eb1f7e8.js"><link rel="prefetch" href="/assets/js/145.5e6f127a.js"><link rel="prefetch" href="/assets/js/146.eb72396e.js"><link rel="prefetch" href="/assets/js/147.e9a8d6f8.js"><link rel="prefetch" href="/assets/js/148.a5c4f1f4.js"><link rel="prefetch" href="/assets/js/149.f315c5a7.js"><link rel="prefetch" href="/assets/js/15.37bbbdf1.js"><link rel="prefetch" href="/assets/js/150.0d1d4ee3.js"><link rel="prefetch" href="/assets/js/151.3497faec.js"><link rel="prefetch" href="/assets/js/152.c147c701.js"><link rel="prefetch" href="/assets/js/153.7fcacd42.js"><link rel="prefetch" href="/assets/js/154.2a401d31.js"><link rel="prefetch" href="/assets/js/155.d10993e5.js"><link rel="prefetch" href="/assets/js/156.f86e9d84.js"><link rel="prefetch" href="/assets/js/157.ee5ed6c9.js"><link rel="prefetch" href="/assets/js/158.6d841cbd.js"><link rel="prefetch" href="/assets/js/159.35b72084.js"><link rel="prefetch" href="/assets/js/16.9440e6ba.js"><link rel="prefetch" href="/assets/js/160.e27343b7.js"><link rel="prefetch" href="/assets/js/161.124a9479.js"><link rel="prefetch" href="/assets/js/162.f5380ebb.js"><link rel="prefetch" href="/assets/js/163.c52cc92d.js"><link rel="prefetch" href="/assets/js/164.b7cc6ef4.js"><link rel="prefetch" href="/assets/js/165.36ad44a8.js"><link rel="prefetch" href="/assets/js/166.a035405a.js"><link rel="prefetch" href="/assets/js/167.8d2c55a5.js"><link rel="prefetch" href="/assets/js/168.7aeb0ca7.js"><link rel="prefetch" href="/assets/js/169.79f3c4da.js"><link rel="prefetch" href="/assets/js/17.3ee29780.js"><link rel="prefetch" href="/assets/js/170.d35522bc.js"><link rel="prefetch" href="/assets/js/171.6f53eecd.js"><link rel="prefetch" href="/assets/js/172.5b3454d7.js"><link rel="prefetch" href="/assets/js/173.59282cc6.js"><link rel="prefetch" href="/assets/js/174.278704fb.js"><link rel="prefetch" href="/assets/js/175.f9006a4d.js"><link rel="prefetch" href="/assets/js/176.1ffce20c.js"><link rel="prefetch" href="/assets/js/177.9837a6c3.js"><link rel="prefetch" href="/assets/js/178.a16db77b.js"><link rel="prefetch" href="/assets/js/179.d8f70a36.js"><link rel="prefetch" href="/assets/js/18.d496c696.js"><link rel="prefetch" href="/assets/js/180.84a4d27f.js"><link rel="prefetch" href="/assets/js/181.6637f17c.js"><link rel="prefetch" href="/assets/js/182.88c1a4b5.js"><link rel="prefetch" href="/assets/js/183.f2edd18c.js"><link rel="prefetch" href="/assets/js/184.d6facabc.js"><link rel="prefetch" href="/assets/js/185.f637e3b5.js"><link rel="prefetch" href="/assets/js/186.f6c9ff5b.js"><link rel="prefetch" href="/assets/js/187.fda04c72.js"><link rel="prefetch" href="/assets/js/188.56bdea83.js"><link rel="prefetch" href="/assets/js/189.6875a763.js"><link rel="prefetch" href="/assets/js/19.25d8619c.js"><link rel="prefetch" href="/assets/js/191.cc23e09d.js"><link rel="prefetch" href="/assets/js/192.f2354b8d.js"><link rel="prefetch" href="/assets/js/193.031ab785.js"><link rel="prefetch" href="/assets/js/194.fe990cb2.js"><link rel="prefetch" href="/assets/js/195.aa0fc924.js"><link rel="prefetch" href="/assets/js/196.e988c14b.js"><link rel="prefetch" href="/assets/js/197.86907415.js"><link rel="prefetch" href="/assets/js/198.3d113936.js"><link rel="prefetch" href="/assets/js/199.e7e4d88f.js"><link rel="prefetch" href="/assets/js/20.510c51e1.js"><link rel="prefetch" href="/assets/js/200.f3784613.js"><link rel="prefetch" href="/assets/js/21.34018f1d.js"><link rel="prefetch" href="/assets/js/22.a5ab48d2.js"><link rel="prefetch" href="/assets/js/23.657ac09a.js"><link rel="prefetch" href="/assets/js/24.618c06e4.js"><link rel="prefetch" href="/assets/js/25.a0b64b6b.js"><link rel="prefetch" href="/assets/js/26.600f5da0.js"><link rel="prefetch" href="/assets/js/27.5f8c4483.js"><link rel="prefetch" href="/assets/js/28.d69ef5b8.js"><link rel="prefetch" href="/assets/js/29.67bf3468.js"><link rel="prefetch" href="/assets/js/3.d1c1b263.js"><link rel="prefetch" href="/assets/js/30.ce63c1bf.js"><link rel="prefetch" href="/assets/js/31.df0328db.js"><link rel="prefetch" href="/assets/js/32.51e55bd2.js"><link rel="prefetch" href="/assets/js/33.9d31fd5f.js"><link rel="prefetch" href="/assets/js/34.742f8e7e.js"><link rel="prefetch" href="/assets/js/35.bc09eb93.js"><link rel="prefetch" href="/assets/js/36.641ed9ee.js"><link rel="prefetch" href="/assets/js/37.c96daa8f.js"><link rel="prefetch" href="/assets/js/38.538049fa.js"><link rel="prefetch" href="/assets/js/39.3cb61da5.js"><link rel="prefetch" href="/assets/js/40.13df92ac.js"><link rel="prefetch" href="/assets/js/41.c0b613a0.js"><link rel="prefetch" href="/assets/js/42.4a298b47.js"><link rel="prefetch" href="/assets/js/43.446b39fc.js"><link rel="prefetch" href="/assets/js/44.36c5426e.js"><link rel="prefetch" href="/assets/js/45.5b3b5200.js"><link rel="prefetch" href="/assets/js/46.5ef95bd0.js"><link rel="prefetch" href="/assets/js/47.504b76f5.js"><link rel="prefetch" href="/assets/js/48.160df44b.js"><link rel="prefetch" href="/assets/js/49.2ee91a38.js"><link rel="prefetch" href="/assets/js/5.1008edee.js"><link rel="prefetch" href="/assets/js/50.c26a2438.js"><link rel="prefetch" href="/assets/js/51.d6b1e9df.js"><link rel="prefetch" href="/assets/js/52.dfeb7c77.js"><link rel="prefetch" href="/assets/js/53.d6372740.js"><link rel="prefetch" href="/assets/js/54.2f7f534b.js"><link rel="prefetch" href="/assets/js/55.e1ada02e.js"><link rel="prefetch" href="/assets/js/56.21ed8f61.js"><link rel="prefetch" href="/assets/js/57.ab760561.js"><link rel="prefetch" href="/assets/js/58.b8d060c7.js"><link rel="prefetch" href="/assets/js/59.8448d4a3.js"><link rel="prefetch" href="/assets/js/60.5ef15155.js"><link rel="prefetch" href="/assets/js/61.ca3374a3.js"><link rel="prefetch" href="/assets/js/62.31891110.js"><link rel="prefetch" href="/assets/js/63.4449d1e7.js"><link rel="prefetch" href="/assets/js/64.0100b79b.js"><link rel="prefetch" href="/assets/js/65.9d8cf504.js"><link rel="prefetch" href="/assets/js/66.8a2920a5.js"><link rel="prefetch" href="/assets/js/67.26730556.js"><link rel="prefetch" href="/assets/js/68.8fd84cbf.js"><link rel="prefetch" href="/assets/js/69.e16a8b0c.js"><link rel="prefetch" href="/assets/js/7.f8bb4c6b.js"><link rel="prefetch" href="/assets/js/70.37a112ac.js"><link rel="prefetch" href="/assets/js/71.e336cea6.js"><link rel="prefetch" href="/assets/js/72.f45223b4.js"><link rel="prefetch" href="/assets/js/73.736a7ee0.js"><link rel="prefetch" href="/assets/js/74.cf064580.js"><link rel="prefetch" href="/assets/js/75.5dbb38f0.js"><link rel="prefetch" href="/assets/js/76.fbf9a06c.js"><link rel="prefetch" href="/assets/js/77.af70dfa8.js"><link rel="prefetch" href="/assets/js/78.97678333.js"><link rel="prefetch" href="/assets/js/79.2e4ccbe1.js"><link rel="prefetch" href="/assets/js/8.3e1ca7f2.js"><link rel="prefetch" href="/assets/js/80.18a2c53a.js"><link rel="prefetch" href="/assets/js/81.b6bb9de5.js"><link rel="prefetch" href="/assets/js/82.c4b54d94.js"><link rel="prefetch" href="/assets/js/83.fb714f89.js"><link rel="prefetch" href="/assets/js/84.af13bd3f.js"><link rel="prefetch" href="/assets/js/85.77950023.js"><link rel="prefetch" href="/assets/js/86.53468a5f.js"><link rel="prefetch" href="/assets/js/87.153a5f78.js"><link rel="prefetch" href="/assets/js/88.fabe930e.js"><link rel="prefetch" href="/assets/js/89.5ced3531.js"><link rel="prefetch" href="/assets/js/9.19b9d5ce.js"><link rel="prefetch" href="/assets/js/90.62e199d2.js"><link rel="prefetch" href="/assets/js/91.b7b26275.js"><link rel="prefetch" href="/assets/js/92.ef23522e.js"><link rel="prefetch" href="/assets/js/93.7f84fa86.js"><link rel="prefetch" href="/assets/js/94.4eb1ab11.js"><link rel="prefetch" href="/assets/js/95.d9a9fbe1.js"><link rel="prefetch" href="/assets/js/96.e1543385.js"><link rel="prefetch" href="/assets/js/97.204b7119.js"><link rel="prefetch" href="/assets/js/98.7de17124.js"><link rel="prefetch" href="/assets/js/99.c485fbc5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2b2147b7.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="Fancy DSA" class="logo"> <span class="site-name can-hide">Fancy DSA</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ds/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/algorithm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">算法</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">LeetCode</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><!----> <span class="title" style="display:;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">关于</a></li><li class="dropdown-item"><!----> <a href="https://source.jonsam.site/nav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="http://docs.jonsam.site/project-5/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计模式
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.jonsam.site" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/jonsam-ng/fancy-dsa" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://www.jonsam.site/wp-content/uploads/2019/10/c1fbc401c64937aaec6cb53359e7c57eabd8e477-e1570649725791.gif"> <div class="blogger-info"><h3>Jonsam NG</h3> <span>想的更多，也要想的更远</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/ds/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/algorithm/" aria-current="page" class="nav-link router-link-exact-active router-link-active">算法</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">LeetCode</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><!----> <span class="title" style="display:;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">关于</a></li><li class="dropdown-item"><!----> <a href="https://source.jonsam.site/nav/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="http://docs.jonsam.site/project-5/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计模式
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://www.jonsam.site" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/jonsam-ng/fancy-dsa" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/ds/" class="sidebar-link">数据结构</a></li><li><a href="/algorithm/" aria-current="page" class="active sidebar-link">算法</a></li><li><a href="/leetcode/" class="sidebar-link">LeetCode</a></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-6"><div class="placeholder"></div> <div class="theme-vdoing-content theme-vdoing-content" data-v-3efbdd0b><div class="column-wrapper" data-v-3efbdd0b><img src="/img/algorithm.png" data-v-3efbdd0b> <dl class="column-info" data-v-3efbdd0b><dt class="title" data-v-3efbdd0b>算法</dt> <dd class="description" data-v-3efbdd0b>搜索算法、排序算法......</dd></dl></div> <div class="catalogue-wrapper" data-v-3efbdd0b><div class="catalogue-title" data-v-3efbdd0b>目录</div> <div class="catalogue-content" data-v-3efbdd0b><dl class="inline" data-v-3efbdd0b><dt data-v-3efbdd0b><a href="/algorithm/index/" data-v-3efbdd0b>1. 开始上手
+              <!----></a></dt></dl><dl class="inline" data-v-3efbdd0b><dt data-v-3efbdd0b><a href="/algorithm/plan/" data-v-3efbdd0b>2. Plan 计划
+              <!----></a></dt></dl><dl class="inline" data-v-3efbdd0b><dt data-v-3efbdd0b><a href="/algorithm/roadmap/" data-v-3efbdd0b>3. Roadmap 路线
+              <!----></a></dt></dl><dl class="inline" data-v-3efbdd0b><dt data-v-3efbdd0b><a href="/algorithm/introduction/" data-v-3efbdd0b>4. 算法简介
+              <!----></a></dt></dl><dl data-v-3efbdd0b><dt id="Sort 排序" data-v-3efbdd0b><a href="#Sort 排序" class="header-anchor" data-v-3efbdd0b>#</a>
+            5. Sort 排序
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/sort/index/" data-v-3efbdd0b>5-1. 章节概要
+                  <!----></a><a href="/algorithm/sort/alphaNumericalSort/" data-v-3efbdd0b>5-2. AlphaNumericalSort [字母顺序排序]
+                  <!----></a><a href="/algorithm/sort/beadSort/" data-v-3efbdd0b>5-3. BeadSort [珠排序]
+                  <!----></a><a href="/algorithm/sort/bogoSort/" data-v-3efbdd0b>5-4. BogoSort [Bogo 排序]
+                  <!----></a><a href="/algorithm/sort/bubbleSort/" data-v-3efbdd0b>5-5. BubbleSort [冒泡排序]
+                  <!----></a><a href="/algorithm/sort/bucketSort/" data-v-3efbdd0b>5-6. BucketSort [桶排序]
+                  <!----></a><a href="/algorithm/sort/cocktailShakerSort/" data-v-3efbdd0b>5-7. CocktailShakerSort [鸡尾酒排序]
+                  <!----></a><a href="/algorithm/sort/combSort/" data-v-3efbdd0b>5-8. CombSort [梳排序]
+                  <!----></a><a href="/algorithm/sort/countingSort/" data-v-3efbdd0b>5-9. CountingSort [计数排序]
+                  <!----></a><a href="/algorithm/sort/cycleSort/" data-v-3efbdd0b>5-10. CycleSort [圈排序]
+                  <!----></a><a href="/algorithm/sort/fisherYatesShuffle/" data-v-3efbdd0b>5-11. FisherYatesShuffle [洗牌算法]
+                  <!----></a><a href="/algorithm/sort/flashSort/" data-v-3efbdd0b>5-12. FlashSort [闪电排序]
+                  <!----></a><a href="/algorithm/sort/gnomeSort/" data-v-3efbdd0b>5-13. GnomeSort [侏儒排序]
+                  <!----></a><a href="/algorithm/sort/heapSort/" data-v-3efbdd0b>5-14. HeapSort [堆排序]
+                  <!----></a><a href="/algorithm/sort/insertionSort/" data-v-3efbdd0b>5-15. InsertionSort [插入排序]
+                  <!----></a><a href="/algorithm/sort/introSort/" data-v-3efbdd0b>5-16. IntroSort [内省排序]
+                  <!----></a><a href="/algorithm/sort/mergeSort/" data-v-3efbdd0b>5-17. MergeSort [归并排序]
+                  <!----></a><a href="/algorithm/sort/oddEvenSort/" data-v-3efbdd0b>5-18. OddEvenSort [奇偶排序]
+                  <!----></a><a href="/algorithm/sort/pancakeSort/" data-v-3efbdd0b>5-19. PancakeSort [煎饼排序]
+                  <!----></a><a href="/algorithm/sort/pigeonHoleSort/" data-v-3efbdd0b>5-20. PigeonHoleSort [鸽巢排序]
+                  <!----></a><a href="/algorithm/sort/quickSort/" data-v-3efbdd0b>5-21. QuickSort [快速排序]
+                  <!----></a><a href="/algorithm/sort/radixSort/" data-v-3efbdd0b>5-22. RadixSort [基数排序]
+                  <!----></a><a href="/algorithm/sort/selectionSort/" data-v-3efbdd0b>5-23. SelectionSort [选择排序]
+                  <!----></a><a href="/algorithm/sort/shellSort/" data-v-3efbdd0b>5-24. ShellSort [希尔排序]
+                  <!----></a><a href="/algorithm/sort/timSort/" data-v-3efbdd0b>5-25. TimSort [Tim 排序]
+                  <!----></a><a href="/algorithm/sort/topologicalSorter/" data-v-3efbdd0b>5-26. TopologicalSorter [拓扑排序器]
+                  <!----></a><a href="/algorithm/sort/wiggleSort/" data-v-3efbdd0b>5-27. WiggleSort [摆动排序]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Search 搜索" data-v-3efbdd0b><a href="#Search 搜索" class="header-anchor" data-v-3efbdd0b>#</a>
+            6. Search 搜索
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/search/binarySearch/" data-v-3efbdd0b>6-1. BinarySearch [二分搜索]
+                  <!----></a><a href="/algorithm/search/exponentialSearch/" data-v-3efbdd0b>6-2. ExponentialSearch [指数搜索]
+                  <!----></a><a href="/algorithm/search/fibonacciSearch/" data-v-3efbdd0b>6-3. FibonacciSearch [斐波那契搜索]
+                  <!----></a><a href="/algorithm/search/interpolationSearch/" data-v-3efbdd0b>6-4. InterpolationSearch [插值搜索]
+                  <!----></a><a href="/algorithm/search/jumpSearch/" data-v-3efbdd0b>6-5. JumpSearch [跳跃搜索]
+                  <!----></a><a href="/algorithm/search/linearSearch/" data-v-3efbdd0b>6-6. LinearSearch [线性搜索]
+                  <!----></a><a href="/algorithm/search/quickSelectSearch/" data-v-3efbdd0b>6-7. QuickSelectSearch [快速选择搜索]
+                  <!----></a><a href="/algorithm/search/slidingWindow/" data-v-3efbdd0b>6-8. SlidingWindow [滑窗算法]
+                  <!----></a><a href="/algorithm/search/stringSearch/" data-v-3efbdd0b>6-9. StringSearch
+                  <!----></a><a href="/algorithm/search/ternarySearch/" data-v-3efbdd0b>6-10. TernarySearch [三元搜索]
+                  <!----></a><a href="/algorithm/search/unionSearch/" data-v-3efbdd0b>6-11. UnionSearch [合并搜索]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Recursive 递归" data-v-3efbdd0b><a href="#Recursive 递归" class="header-anchor" data-v-3efbdd0b>#</a>
+            7. Recursive 递归
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/recursive/binaryEquivalent/" data-v-3efbdd0b>7-1. BinaryEquivalent [二进制转化]
+                  <!----></a><a href="/algorithm/recursive/binarySearch/" data-v-3efbdd0b>7-2. BinarySearch [二分搜索]
+                  <!----></a><a href="/algorithm/recursive/euclideanGCD/" data-v-3efbdd0b>7-3. EuclideanGCD [辗转相除法]
+                  <!----></a><a href="/algorithm/recursive/factorial/" data-v-3efbdd0b>7-4. Factorial [阶乘]
+                  <!----></a><a href="/algorithm/recursive/fibonacci/" data-v-3efbdd0b>7-5. FibonacciNumberRecursive [斐波那契数]
+                  <!----></a><a href="/algorithm/recursive/floodFill/" data-v-3efbdd0b>7-6. FloodFill [Flood Fill算法]
+                  <!----></a><a href="/algorithm/recursive/kochSnowflake/" data-v-3efbdd0b>7-7. KochSnowflake [科赫雪花算法]
+                  <!----></a><a href="/algorithm/recursive/palindrome/" data-v-3efbdd0b>7-8. Palindrome [回文]
+                  <!----></a><a href="/algorithm/recursive/towerOfHanoi/" data-v-3efbdd0b>7-9. TowerOfHanoi [汉诺塔]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Graph 图" data-v-3efbdd0b><a href="#Graph 图" class="header-anchor" data-v-3efbdd0b>#</a>
+            8. Graph 图
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/graph/bellmanFord/" data-v-3efbdd0b>8-1. BellmanFord [贝尔曼-福特算法]
+                  <!----></a><a href="/algorithm/graph/breadthFirstSearch/" data-v-3efbdd0b>8-2. BreadthFirstSearch [广度优先搜索/BFS]
+                  <!----></a><a href="/algorithm/graph/breadthFirstShortestPath/" data-v-3efbdd0b>8-3. BreadthFirstShortestPath [广度优先寻最短路径]
+                  <!----></a><a href="/algorithm/graph/connectedComponents/" data-v-3efbdd0b>8-4. ConnectedComponents [连通元件]
+                  <!----></a><a href="/algorithm/graph/density/" data-v-3efbdd0b>8-5. Density [图的密度]
+                  <!----></a><a href="/algorithm/graph/depthFirstSearch/" data-v-3efbdd0b>8-6. DepthFirstSearch [深度优先搜索]
+                  <!----></a><a href="/algorithm/graph/dijkstra/" data-v-3efbdd0b>8-7. Dijkstra [迪杰斯特拉算法]
+                  <!----></a><a href="/algorithm/graph/floydWarshall/" data-v-3efbdd0b>8-8. FloydWarshall [弗洛伊德算法]
+                  <!----></a><a href="/algorithm/graph/kruskalMST/" data-v-3efbdd0b>8-9. KruskalMST [克鲁斯克尔算法]
+                  <!----></a><a href="/algorithm/graph/nodeNeighbors/" data-v-3efbdd0b>8-10. NodeNeighbors [节点邻域]
+                  <!----></a><a href="/algorithm/graph/numberOfIslands/" data-v-3efbdd0b>8-11. NumberOfIslands [岛屿数量]
+                  <!----></a><a href="/algorithm/graph/primMST/" data-v-3efbdd0b>8-12. PrimMST [普林姆算法]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Tree 树" data-v-3efbdd0b><a href="#Tree 树" class="header-anchor" data-v-3efbdd0b>#</a>
+            9. Tree 树
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/tree/breadthFirstTreeTraversal/" data-v-3efbdd0b>9-1. BreadthFirstTreeTraversal [二叉树的广度优先遍历、层序遍历]
+                  <!----></a><a href="/algorithm/tree/depthFirstSearch/" data-v-3efbdd0b>9-2. DepthFirstSearch [二叉树的深度优先遍历]
+                  <!----></a><a href="/algorithm/tree/fenwickTree/" data-v-3efbdd0b>9-3. FenwickTree [二叉索引树]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Math 数学" data-v-3efbdd0b><a href="#Math 数学" class="header-anchor" data-v-3efbdd0b>#</a>
+            10. Math 数学
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/math/abs/" data-v-3efbdd0b>10-1. Abs [绝对值]
+                  <!----></a><a href="/algorithm/math/aliquotSum/" data-v-3efbdd0b>10-2. AliquotSum [真因数和]
+                  <!----></a><a href="/algorithm/math/area/" data-v-3efbdd0b>10-3. Area [面积]
+                  <!----></a><a href="/algorithm/math/arithmeticGeometricMean/" data-v-3efbdd0b>10-4. ArithmeticGeometricMean [算术-几何平均数]
+                  <!----></a><a href="/algorithm/math/armstrongNumber/" data-v-3efbdd0b>10-5. ArmstrongNumber [阿姆斯特朗数]
+                  <!----></a><a href="/algorithm/math/averageMean/" data-v-3efbdd0b>10-6. AverageMean [平均数]
+                  <!----></a><a href="/algorithm/math/averageMedian/" data-v-3efbdd0b>10-7. AverageMedian [中位数]
+                  <!----></a><a href="/algorithm/math/binaryExponentiation/" data-v-3efbdd0b>10-8. BinaryExponentiation [二分求幂]
+                  <!----></a><a href="/algorithm/math/bisectionMethod/" data-v-3efbdd0b>10-9. BisectionMethod [二分法]
+                  <!----></a><a href="/algorithm/math/binaryConvert/" data-v-3efbdd0b>10-10. BinaryConvert [二进制转换]
+                  <!----></a><a href="/algorithm/math/checkKishnamurthyNumber/" data-v-3efbdd0b>10-11. CheckKishnamurthyNumber [克里希纳穆尔西数]
+                  <!----></a><a href="/algorithm/math/coordinate/" data-v-3efbdd0b>10-12. Coordinate
+                  <!----></a><a href="/algorithm/math/coPrimeCheck/" data-v-3efbdd0b>10-13. CoPrimeCheck
+                  <!----></a><a href="/algorithm/math/decimalIsolate/" data-v-3efbdd0b>10-14. DecimalIsolate
+                  <!----></a><a href="/algorithm/math/degreeToRadian/" data-v-3efbdd0b>10-15. DegreeToRadian
+                  <!----></a><a href="/algorithm/math/decimalExpansion/" data-v-3efbdd0b>10-16. DecimalExpansion
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Hash 哈希" data-v-3efbdd0b><a href="#Hash 哈希" class="header-anchor" data-v-3efbdd0b>#</a>
+            11. Hash 哈希
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/hash/sha1/" data-v-3efbdd0b>11-1. SHA1 [安全散列算法1]
+                  <!----></a><a href="/algorithm/hash/sha256/" data-v-3efbdd0b>11-2. SHA256 [SHA256算法]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="String 字符串" data-v-3efbdd0b><a href="#String 字符串" class="header-anchor" data-v-3efbdd0b>#</a>
+            12. String 字符串
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/string/alphaNumericPalindrome/" data-v-3efbdd0b>12-1. AlphaNumericPalindrome [回文串]
+                  <!----></a><a href="/algorithm/string/alternativeStringArrange/" data-v-3efbdd0b>12-2. AlternativeStringArrange [交替合并字符串]
+                  <!----></a><a href="/algorithm/string/boyerMoore/" data-v-3efbdd0b>12-3. BoyerMoore [博耶-穆尔字符串搜索算法、BM 算法]
+                  <!----></a><a href="/algorithm/string/checkAnagram/" data-v-3efbdd0b>12-4. CheckAnagram [易位构词]
+                  <!----></a><a href="/algorithm/string/namingConvention/" data-v-3efbdd0b>12-5. NamingConvention [命名规则]
+                  <!----></a><a href="/algorithm/string/checkExceeding/" data-v-3efbdd0b>12-6. CheckExceeding [Exceeding words]
+                  <!----></a><a href="/algorithm/string/checkPangram/" data-v-3efbdd0b>12-7. CheckPangram [全字母句]
+                  <!----></a><a href="/algorithm/string/checkWordOccurrence/" data-v-3efbdd0b>12-8. CheckWordOccurrence [单词计数]
+                  <!----></a><a href="/algorithm/string/countVowels/" data-v-3efbdd0b>12-9. CountVowels [元音字母计数]
+                  <!----></a><a href="/algorithm/string/createPermutations/" data-v-3efbdd0b>12-10. CreatePermutations [全排列]
+                  <!----></a><a href="/algorithm/string/diceCoefficient/" data-v-3efbdd0b>12-11. DiceCoefficient [Dice系数]
+                  <!----></a><a href="/algorithm/string/formatPhoneNumber/" data-v-3efbdd0b>12-12. FormatPhoneNumber [格式化电话号码]
+                  <!----></a><a href="/algorithm/string/generateGUID/" data-v-3efbdd0b>12-13. GenerateGUID [生成GUID、UUID]
+                  <!----></a><a href="/algorithm/string/hammingDistance/" data-v-3efbdd0b>12-14. HammingDistance [汉明距离]
+                  <!----></a><a href="/algorithm/string/KMPPatternSearching/" data-v-3efbdd0b>12-15. KMPPatternSearching [KMP字符串匹配]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="BitManipulation 位操纵" data-v-3efbdd0b><a href="#BitManipulation 位操纵" class="header-anchor" data-v-3efbdd0b>#</a>
+            13. BitManipulation 位操纵
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/bit/binaryCountSetBits/" data-v-3efbdd0b>13-1. BinaryCountSetBits [二进制串数1]
+                  <!----></a><a href="/algorithm/bit/powerOfTwo/" data-v-3efbdd0b>13-2. PowerOfTwo [2的幂]
+                  <!----></a><a href="/algorithm/bit/setBit/" data-v-3efbdd0b>13-3. SetBit [位操作]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Backtracking 回溯" data-v-3efbdd0b><a href="#Backtracking 回溯" class="header-anchor" data-v-3efbdd0b>#</a>
+            14. Backtracking 回溯
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/backtracking/allCombinationsOfSizeK/" data-v-3efbdd0b>14-1. AllCombinationsOfSizeK [全组合]
+                  <!----></a><a href="/algorithm/backtracking/generatePermutations/" data-v-3efbdd0b>14-2. GeneratePermutations [排列]
+                  <!----></a><a href="/algorithm/backtracking/knightTour/" data-v-3efbdd0b>14-3. KnightTour [骑士巡逻]
+                  <!----></a><a href="/algorithm/backtracking/nQueens/" data-v-3efbdd0b>14-4. NQueens [N皇后问题]
+                  <!----></a><a href="/algorithm/backtracking/ratInAMaze/" data-v-3efbdd0b>14-5. RatInAMaze [迷宫之鼠]
+                  <!----></a><a href="/algorithm/backtracking/sudoku/" data-v-3efbdd0b>14-6. Sudoku [数独]
+                  <!----></a><a href="/algorithm/backtracking/sumOfSubset/" data-v-3efbdd0b>14-7. SumOfSubset [子集之和]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="DynamicProgramming 动态规划" data-v-3efbdd0b><a href="#DynamicProgramming 动态规划" class="header-anchor" data-v-3efbdd0b>#</a>
+            15. DynamicProgramming 动态规划
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/dp/climbingStairs/" data-v-3efbdd0b>15-1. ClimbingStairs [爬楼梯]
+                  <!----></a><a href="/algorithm/dp/coinChange/" data-v-3efbdd0b>15-2. CoinChange [钱币兑换]
+                  <!----></a><a href="/algorithm/dp/editDistance/" data-v-3efbdd0b>15-3. EditDistance [编辑距离]
+                  <!----></a><a href="/algorithm/dp/fibonacciNumber/" data-v-3efbdd0b>15-4. FibonacciNumber [斐波那契数]
+                  <!----></a><a href="/algorithm/dp/findMonthCalendar/" data-v-3efbdd0b>15-5. FindMonthCalendar [月历]
+                  <!----></a><a href="/algorithm/dp/kadaneAlgo/" data-v-3efbdd0b>15-6. KadaneAlgo [最大连续子数组和之Kadane算法]
+                  <!----></a><a href="/algorithm/dp/levenshteinDistance/" data-v-3efbdd0b>15-7. LevenshteinDistance [莱文斯坦距离]
+                  <!----></a><a href="/algorithm/dp/longestCommonSubsequence/" data-v-3efbdd0b>15-8. LongestCommonSubsequence [最长公共子序列]
+                  <!----></a><a href="/algorithm/dp/longestIncreasingSubsequence/" data-v-3efbdd0b>15-9. LongestIncreasingSubsequence [最长递增子序列]
+                  <!----></a><a href="/algorithm/dp/longestPalindromicSubsequence/" data-v-3efbdd0b>15-10. LongestPalindromicSubsequence [最长回文子序列]
+                  <!----></a><a href="/algorithm/dp/longestValidParentheses/" data-v-3efbdd0b>15-11. LongestValidParentheses [最长合法括号]
+                  <!----></a><a href="/algorithm/dp/maxNonAdjacentSum/" data-v-3efbdd0b>15-12. MaxNonAdjacentSum [最大非连接子集和]
+                  <!----></a><a href="/algorithm/dp/maxProductOfThree/" data-v-3efbdd0b>15-13. MaxProductOfThree [最大三数积]
+                  <!----></a><a href="/algorithm/dp/minimumCostPath/" data-v-3efbdd0b>15-14. MinimumCostPath [最小代价路径]
+                  <!----></a><a href="/algorithm/dp/numberOfSubsetEqualToGivenSum/" data-v-3efbdd0b>15-15. NumberOfSubsetEqualToGivenSum [等和子集]
+                  <!----></a><a href="/algorithm/dp/rodCutting/" data-v-3efbdd0b>15-16. RodCutting [棒材切割问题]
+                  <!----></a><a href="/algorithm/dp/shuf/" data-v-3efbdd0b>15-17. Shuf [随机样本]
+                  <!----></a><a href="/algorithm/dp/180SieveOfEratosthenes/" data-v-3efbdd0b>15-18. SieveOfEratosthenes [埃拉托斯特尼筛法]
+                  <!----></a><a href="/algorithm/dp/slidingWindow/" data-v-3efbdd0b>15-19. SlidingWindow [滑窗]
+                  <!----></a><a href="/algorithm/dp/sudokuSolver/" data-v-3efbdd0b>15-20. SudokuSolver [数独]
+                  <!----></a><a href="/algorithm/dp/trappingRainWater/" data-v-3efbdd0b>15-21. TrappingRainWater [接住雨水]
+                  <!----></a><a href="/algorithm/dp/tribonacciNumber/" data-v-3efbdd0b>15-22. TribonacciNumber [翠波那契数]
+                  <!----></a><a href="/algorithm/dp/zeroOneKnapsack/" data-v-3efbdd0b>15-23. ZeroOneKnapsack  [零一背包]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Cache 缓存" data-v-3efbdd0b><a href="#Cache 缓存" class="header-anchor" data-v-3efbdd0b>#</a>
+            16. Cache 缓存
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/cache/LFUCache/" data-v-3efbdd0b>16-1. LFUCache [最近最少使用缓存]
+                  <!----></a><a href="/algorithm/cache/LRUCache/" data-v-3efbdd0b>16-2. LRUCache [最近最久未使用缓存]
+                  <!----></a><a href="/algorithm/cache/memoize/" data-v-3efbdd0b>16-3. Memoize [缓存函数]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Array 数组" data-v-3efbdd0b><a href="#Array 数组" class="header-anchor" data-v-3efbdd0b>#</a>
+            17. Array 数组
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/array/localMaxPoint/" data-v-3efbdd0b>17-1. LocalMaxPoint [局部最值]
+                  <!----></a><a href="/algorithm/array/quickSelect/" data-v-3efbdd0b>17-2. QuickSelect [快速选择]
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Ciphers 密码学" data-v-3efbdd0b><a href="#Ciphers 密码学" class="header-anchor" data-v-3efbdd0b>#</a>
+            18. Ciphers 密码学
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/cipher/atbash/" data-v-3efbdd0b>18-1. Atbash
+                  <!----></a><a href="/algorithm/cipher/caesarsCipher/" data-v-3efbdd0b>18-2. CaesarsCipher
+                  <!----></a><a href="/algorithm/cipher/keyFinder/" data-v-3efbdd0b>18-3. KeyFinder
+                  <!----></a><a href="/algorithm/cipher/keywordShiftedAlphabet/" data-v-3efbdd0b>18-4. KeywordShiftedAlphabet
+                  <!----></a><a href="/algorithm/cipher/ROT13/" data-v-3efbdd0b>18-5. ROT13
+                  <!----></a><a href="/algorithm/cipher/vigenereCipher/" data-v-3efbdd0b>18-6. VigenereCipher
+                  <!----></a><a href="/algorithm/cipher/XORCipher/" data-v-3efbdd0b>18-7. XORCipher
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="Conversions 转换" data-v-3efbdd0b><a href="#Conversions 转换" class="header-anchor" data-v-3efbdd0b>#</a>
+            19. Conversions 转换
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/conversion/p1/" data-v-3efbdd0b>19-1. 算法与转换：Part1
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="ProjectEuler 欧拉计划" data-v-3efbdd0b><a href="#ProjectEuler 欧拉计划" class="header-anchor" data-v-3efbdd0b>#</a>
+            20. ProjectEuler 欧拉计划
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/euler/index/" data-v-3efbdd0b>20-1. 欧拉计划
+                  <!----></a></dd></dl><dl data-v-3efbdd0b><dt id="其他" data-v-3efbdd0b><a href="#其他" class="header-anchor" data-v-3efbdd0b>#</a>
+            21. 其他
+          </dt> <dd data-v-3efbdd0b><a href="/algorithm/more/conwaysGameOfLife/" data-v-3efbdd0b>21-1. ConwaysGameOfLife [康威生命游戏]
+                  <!----></a></dd></dl></div></div></div> <div class="content-wrapper"><!----> <!---->  <div class="theme-vdoing-content content__default"></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/04/28, 23:07:23</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/ds/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">数据结构</div></a> <a href="/leetcode/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">LeetCode</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/ds/" class="prev">数据结构</a></span> <span class="next"><a href="/leetcode/">LeetCode</a>→
+      </span></p></div></div></div> <div class="article-list no-article-list"><div class="article-title"><a href="/archives" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/leetcode/problems/0/"><div>
+            0-20题解
+            <!----></div></a> <span class="date">10-31</span></dt></dl><dl><dd>02</dd> <dt><a href="/leetcode/problems/index/"><div>
+            本章导读
+            <!----></div></a> <span class="date">10-31</span></dt></dl><dl><dd>03</dd> <dt><a href="/algorithm/conversion/p1/"><div>
+            算法与转换：Part1
+            <!----></div></a> <span class="date">10-28</span></dt></dl> <dl><dd></dd> <dt><a href="/archives" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:jonsam.ng@foxmail.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/jonsam-ng" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://www.jonsam.site" title="博客" target="_blank" class="iconfont icon-mao"></a><a href="http://docs.jonsam.site" title="文档" target="_blank" class="iconfont icon-shuben"></a><a href="https://source.jonsam.site" title="源码" target="_blank" class="iconfont icon-code"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2022-2022
+    <span>Fancy DSA | Made by <a href="https://www.jonsam.site" target="_blank">Jonsam</a> by ❤</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div><!----><div></div><div></div></div></div>
+    <script src="/assets/js/app.bf9a1460.js" defer></script><script src="/assets/js/2.99f70505.js" defer></script><script src="/assets/js/190.efd660a2.js" defer></script><script src="/assets/js/6.aae8cd39.js" defer></script><script src="/assets/js/4.0809c88f.js" defer></script>
+  </body>
+</html>
